@@ -1,0 +1,23 @@
+[project]
+name = "interpreter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jacob" }
+]
+requires-python = ">=3.15"
+dependencies = []
+
+[project.scripts]
+interpreter = "interpreter:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyrefly>=1.4.0",
+    "ruff>=0.17.2",
+]
